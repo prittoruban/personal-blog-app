@@ -13,6 +13,7 @@
     "@clerk/themes": "^2.1.42",
     "firebase": "^11.0.1",
     "flowbite-react": "^0.10.2",
+    "framer-motion": "^11.13.1",
     "mongodb": "^6.10.0",
     "mongoose": "^8.8.1",
     "next": "15.0.3",
