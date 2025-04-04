@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
   IconHome,
   IconArticle,
@@ -116,7 +117,16 @@ export function Navbar() {
             <div className="h-16 flex items-center justify-between px-4 md:px-6">
               <Link href="/" className="flex items-center gap-2 group">
                 <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary/90 to-primary-foreground/90 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                  <span className="text-background font-bold text-lg">PR</span>
+                  <span className="text-background font-bold text-lg">
+                    <Image
+                      src="/animatedImg.png"
+                      alt="Logo"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                      priority
+                    />
+                  </span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-bold hidden md:block">
